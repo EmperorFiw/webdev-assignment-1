@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/movie.css">
+    <title>Assignment 1</title>
+</head>
+<body>
+    <section>
+        <div class="container-img">
+            <img src="https://m.media-amazon.com/images/M/MV5BNTc5NmI2ODktMDMwOS00NzIxLWIwNGUtNmUwMTRiNWZjMTI3XkEyXkFqcGc@._V1_FMjpg_UX3601_.jpg" alt="">
+            <div class="video-container">
+                <div class="video-preview" style="background-image: url('https://m.media-amazon.com/images/M/MV5BZWI3YjUzMTQtYzJiNC00MGE4LThiNzItNGRmODJhNGVkODc5XkEyXkFqcGdeQWFkcmllY2xh._V1_SX0_.jpg');"></div>
+                <div class="play-overlay" onclick="playVideo()">
+                    <svg class="play-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M10.8 15.9l4.67-3.5c.27-.2.27-.6 0-.8L10.8 8.1a.5.5 0 0 0-.8.4v7c0 .41.47.65.8.4zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path>
+                    </svg>
+                    <div class="play-text">Play Video</div>
+                </div>
+                <video class="video-element" controls>
+                    <source src="https://imdb-video.media-imdb.com/vi970507801/1434659529640-260ouz-1715785836799.mp4?Expires=1733238670&Signature=XAxX9cAfF6bTj4rhaYDi5pW6boAxmWXhE0hlj2DyOdKaVzGR1GCatF~Xz-1OuaSY2hwGZsB9CH7XFY725COF63cL1s7WwayGDcEctGOgaogA2BZzv3NVIr0mGB93duDrETNYurkYFAtTf9bTfFM2Wp2q~rwoCVEz1gmkvTnI0suuH-xvqnaD5~e3xiBJ~Kp568qWEDKCmC71LrroTnvqOXwOrWlIJoGikKUUlMQbq0dxDyvKtViy2qWF-u95yvWoglAi8qHIqkAS6iDyJKhaOQCN2sQ4D0Adru7VUHUOuyYRyDJA-sSXk0rkM1L0O09a8~AQV38LkD-6D~-jV3fuTQ__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA" type="video/mp4">
+                  </video>
+            </div>
+        </div>
+        <div class="details">
+            <div class="con-mv">
+                <div class="logo_movie">
+                    <img src="https://m.media-amazon.com/images/M/MV5BOWMwYjYzYmMtMWQ2Ni00NWUwLTg2MzAtYzkzMDBiZDIwOTMwXkEyXkFqcGc@._V1_QL75_UX280_CR0,14,280,414_.jpg" alt="Movie Poster">
+                    <div class="watchlist-ribbon">
+                        <svg class="ipc-watchlist-ribbon__bg" width="24px" height="34px" viewBox="0 0 24 34" xmlns="http://www.w3.org/2000/svg" role="presentation">
+                            <polygon class="ipc-watchlist-ribbon__bg-hover" points="24 0 0 0 0 32 12.2436611 26.2926049 24 31.7728343"></polygon>
+                            <polygon class="ipc-watchlist-ribbon__bg-shadow" points="24 31.7728343 24 33.7728343 12.2436611 28.2926049 0 34 0 32 12.2436611 26.2926049"></polygon>
+                        </svg>
+                        <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M18 13h-5v5c0 .55-.45 1-1 1s-1-.45-1-1v-5H6c-.55 0-1-.45-1-1s.45-1 1-1h5V6c0-.55.45-1 1-1s1 .45 1 1v5h5c.55 0 1 .45 1 1s-.45 1-1 1z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="con-detail">
+                <div class="item--text-content">
+                    <div class="item--heading">
+                        <h3 class="ipc-title__text">Wicked
+                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" role="presentation">
+                                <path d="M5.622.631A2.153 2.153 0 0 0 5 2.147c0 .568.224 1.113.622 1.515l8.249 8.34-8.25 8.34a2.16 2.16 0 0 0-.548 2.07c.196.74.768 1.317 1.499 1.515a2.104 2.104 0 0 0 2.048-.555l9.758-9.866a2.153 2.153 0 0 0 0-3.03L8.62.61C7.812-.207 6.45-.207 5.622.63z"></path>
+                            </svg>
+                        </h3>
+                    </div>
+                    <div class="titleaction">
+                        <span aria-label="IMDb Rating 7.1" class="ipc-rating-star">
+                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="currentColor" role="presentation">
+                                <path d="M12 20.1l5.82 3.682c1.066.675 2.37-.322 2.09-1.584l-1.543-6.926 5.146-4.667c.94-.85.435-2.465-.799-2.567l-6.773-.602L13.29.89a1.38 1.38 0 0 0-2.581 0l-2.65 6.53-6.774.602C.052 8.126-.453 9.74.486 10.59l5.147 4.666-1.542 6.926c-.28 1.262 1.023 2.26 2.09 1.585L12 20.099z"></path>
+                            </svg>8.1/10
+                            <div class="rate-bar"></div>
+                            <button class="ipc-rate-button" data-testid="rate-button">
+                                <span class="ipc-rating-star ipc-rating-star--baseAlt ipc-rating-star--rate">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"  viewBox="0 0 24 24" role="presentation">
+                                        <path d="M22.724 8.217l-6.786-.587-2.65-6.22c-.477-1.133-2.103-1.133-2.58 0l-2.65 6.234-6.772.573c-1.234.098-1.739 1.636-.8 2.446l5.146 4.446-1.542 6.598c-.28 1.202 1.023 2.153 2.09 1.51l5.818-3.495 5.819 3.509c1.065.643 2.37-.308 2.089-1.51l-1.542-6.612 5.145-4.446c.94-.81.45-2.348-.785-2.446zm-10.726 8.89l-5.272 3.174 1.402-5.983-4.655-4.026 6.141-.531 2.384-5.634 2.398 5.648 6.14.531-4.654 4.026 1.402 5.983-5.286-3.187z"></path>
+                                    </svg>
+                                <span id="mbtnr">Rate</span></span>
+                            </button>
+                        </span>
+                    </div>
+                    <h3 class="item--subheading">In theaters</h3>
+                    <p class="item--description">
+                        If you’re new to the world of Wicked, here’s what you need to know. In 1995, author Gregory Maguire wrote the novel “Wicked: The Life and Times of the Wicked Witch of the West”, a revisionist origin story about Elphaba, the antagonist from Frank L. Buam’s “The Wizard of Oz.” Then in 2003, the popular book was adapted into a Broadway musical that focused on the complicated relationship between Elphaba and her school roommate Glinda. Now, director John M. Chu is bringing this beloved fantasy tale to the silver screen with a musical movie starring Cynthia Erivo and Ariana Grande as the bewitching duo whose passion, talents, and personalities bring them together before fate takes them down very different paths.
+                    </p>
+                    <div class="actor-con">
+                        <div class="actor">
+                            <img src="https://m.media-amazon.com/images/M/MV5BMTcyMTI3NzI1Nl5BMl5BanBnXkFtZTgwNjQ3Njk2NjM@._V1_QL75_UX280_CR0,12,280,280_.jpg" alt="">
+                            <h4>Cynthia Erivo</h4>
+                        </div>
+                        <div class="actor">
+                            <img src="https://m.media-amazon.com/images/M/MV5BM2JhZWJmMDEtNTU5MS00YmQ3LTk1NjMtOGFlMjM2MjZlNjg5XkEyXkFqcGc@._V1_QL75_UY280_CR109,0,280,280_.jpg" alt="">
+                            <h4>Ariana Grande</h4>
+                        </div>
+                        <div class="actor">
+                            <img src="https://m.media-amazon.com/images/M/MV5BZWIxM2YzMTEtMjFiNy00NWQ2LWI0Y2MtZGVmYjM0YWFmZThmXkEyXkFqcGc@._V1_QL75_UX280_CR0,0,280,280_.jpg" alt="">
+                            <h4>Jeff Goldblum</h4>
+                        </div>
+                        <div class="actor">
+                            <img src="https://m.media-amazon.com/images/M/MV5BMTg0NTI0NDkzOF5BMl5BanBnXkFtZTcwMjYwMTIwNw@@._V1_QL75_UX280_CR0,31,280,280_.jpg" alt="">
+                            <h4>Michelle Yeoh</h4>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>        
+    </section>
+    <script>
+        function playVideo() {
+            const video = document.querySelector('.video-element');
+            const overlay = document.querySelector('.play-overlay');
+            const preview = document.querySelector('.video-preview');
+
+            overlay.style.display = 'none';
+            preview.style.display = 'none';
+            video.style.display = 'block';
+            video.play();
+        }
+    </script>
+</body>
+</html>
