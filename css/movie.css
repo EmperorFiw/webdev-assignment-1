@@ -9,6 +9,7 @@ body, html {
     justify-content: center;
     margin-top: 1rem;
     padding: 2px;
+    position: relative;
 }
 
 .container-img img {
@@ -20,8 +21,8 @@ body, html {
 }
 .video-container {
     position: absolute; /* ทำให้ตำแหน่งเป็นแบบอิงจาก container */
-    bottom: 35px; /* ระยะห่างจากขอบล่าง */
-    right: 60px; /* ระยะห่างจากขอบขวา */
+    bottom: 10px;
+    right: 50px; /* ระยะห่างจากขอบขวา */
     width: 320px;
     height: 180px; 
     overflow: hidden;
